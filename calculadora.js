@@ -12,16 +12,31 @@ if (isNaN(num1soma) || isNaN(num2soma)) {
 var soma = num1soma+num2soma;
 document.getElementById('resultadoSoma').innerText = 'Resultado:'+ soma;
 }
-function calcularsub();
-var num1sub = document.getElementById('num1sub'). value;
-var num2sub = document.getElementById('num2sub'). value;
+function calcularSub()  {
+var num1Sub = document.getElementById('num1Sub'). value;
+var num2Sub = document.getElementById('num2Sub'). value;
 
-num1sub = parseFloat(num1sub);
-num2sub = parseFloat(num2sub);
+num1Sub = parseFloat(num1Sub);
+num2Sub = parseFloat(num2Sub);
 
-if (isNaN(num1sub) || isNaN(num2sub)) {
-    document.getElementById('resultadosub').innerText = 'Por favor, insira números validos.';
+if (isNaN(num1Sub) || isNaN(num2Sub)) {
+    document.getElementById('resultadoSub').innerText = 'Por favor, insira números validos.';
     return; 
 }
-var sub = num1sub+num2sub;
-document.getElementById('resultadosub').innerText = 'Resultado:'+ sub;
+var soma = num1Sub-num2Sub;
+document.getElementById('resultadoSub').innerText = 'Resultado:'+ soma;
+}
+function calcularMul()  {
+var num1Mul = document.getElementById('num1Mul'). value;
+var num2Mul = document.getElementById('num2Mul'). value;
+
+num1Mul = parseFloat(num1Mul);
+num2Mul = parseFloat(num2Mul);
+    
+if (isNaN(num1Mul) || isNaN(num2Mul)) {
+    document.getElementById('resultadoMul').innerText = 'Por favor, insira números validos.';
+    return; 
+}
+var soma = num1Mul*num2Mul;
+    document.getElementById('resultadoMul').innerText = 'Resultado:'+ soma;
+    }
