@@ -1,4 +1,15 @@
 div{
     background-color: cyan;
-    
+    text-align:center;
+}
+#display{
+    font-size: 60px;
+    font-family: cursive;
+    width: 1900px;
+    height: 120px;
+    text-align: center; 
+}
+#tamain{
+    width: 90px;
+    height:90px;
 }
